@@ -103,14 +103,14 @@ class Inventario{
 
        
         while (continua){
-            Inventario.menu();
+            menu();
             System.out.print("Input: ");
             Scanner scanner = new Scanner(System.in);
             int input = scanner.nextInt();
     
             switch (input) {
                 case 1: 
-                    Inventario.aggiungi();
+                    aggiungi();
                     break;
                 case 2:
                     for (Product prodotto : arr) {
@@ -119,16 +119,16 @@ class Inventario{
                     }
                     break;
                 case 3:
-                    System.out.println(Inventario.serachByName());
+                    System.out.println(serachByName());
                     break;
                 case 4:
-                    Inventario.deleteByName();
+                    deleteByName();
                     break;
                 case 5:
-                    Inventario.filterPrice();
+                    filterPrice();
                     break;
                 case 6:
-                    Inventario.modifica();
+                    modifica();
                     break;
                 case 7:
                     continua = false;
